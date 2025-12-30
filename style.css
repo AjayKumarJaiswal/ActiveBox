@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: azure;
+  z-index: 10;
+}
+
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 60px;     
+  right: 60px;    
+  height: 1px;
+  background-color: azure;
+}
+.logo {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.logo .active {
+  color: rgba(241, 233, 233, 0.6); 
+}
+
+.logo .box {
+  color: #ffffff; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: azure;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(198, 198, 206, 0.65), rgba(73, 76, 88, 0.65)), url(https://img.freepik.com/premium-photo/pen-book-wood-background_49683-5354.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    padding: 0 20px;
+    text-align: center; 
+}
+
+.hero h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+.hero p{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    padding: 0px 250px 40px;
+}
+
+.hero button{
+    background-color: #ff4c4c;
+    color: azure;
+    border: none;
+    padding: 15px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 50px;
+    
+}
+
+.features {
+      padding: 80px 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      text-align: center;
+    }
+
+
+.feature-box i {
+      font-size: 40px;
+      color: #b66c6c;
+      margin-bottom: 20px;
+      
+    }
+.feature-box h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+.feature-box p {
+      font-size: 14px;
+      color: #777;
+      line-height: 1.6;
+    } 
